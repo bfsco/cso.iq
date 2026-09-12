@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>تصريح جاهز للتنزيل</title>
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+html, body { width:100%; min-height:100%; }
+body {
+  font-family: "Segoe UI", Tahoma, Arial, "Arial Unicode MS", sans-serif;
+  background: radial-gradient(circle at 50% 45%, rgba(24,55,78,.28), transparent 55%),
+    linear-gradient(135deg, #081526 0%, #10253a 50%, #071326 100%);
+  min-height:100vh; color:#fff; display:flex; justify-content:center; align-items:flex-start;
+  padding:52px 20px 60px;
+}
+.container {
+  width:100%; max-width:640px; padding:36px 28px 30px; text-align:center;
+  background:rgba(255,255,255,.045); border:1px solid rgba(255,255,255,.075);
+  border-radius:40px; box-shadow:0 22px 55px rgba(0,0,0,.22);
+}
+h1 { font-size:30px; line-height:1.35; margin:10px 0 14px; font-weight:600; }
+.subtitle { color:#a9b9c9; font-size:16px; line-height:1.75; margin:0 6px 28px; }
+.permit-card {
+  background:rgba(255,255,255,.052); border:1px solid rgba(255,255,255,.105);
+  border-radius:22px; padding:16px 18px; margin-bottom:14px; text-align:right; direction:rtl;
+}
+.card-label { color:#8fa1b2; font-size:14px; margin-bottom:6px; }
+.card-value { color:#fff; font-size:22px; font-weight:700; word-break:break-word; }
+.download-section { margin-top:30px; }
+.download-btn {
+  width:100%; min-height:80px; border:0; border-radius:22px; padding:16px 24px;
+  background:linear-gradient(135deg, #12b9aa 0%, #08a6e4 100%); color:#06192b;
+  font-family:inherit; font-size:19px; font-weight:700; cursor:pointer;
+  box-shadow:0 12px 30px rgba(0,184,215,.22);
+}
+.info-text { color:#8194a7; font-size:14px; margin-top:14px; padding-top:14px; border-top:1px solid rgba(255,255,255,.09); }
+@media (max-width:480px){ .container{padding:26px 16px 22px; border-radius:32px;} h1{font-size:26px;} }
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>تصريح جاهز للتنزيل</h1>
+  <p class="subtitle">استخدم الزر أدناه لتنزيل نسخة PDF الرسمية للتصريح.<br>يمكنك مشاركتها مع الجهات المعنية للتحقق.</p>
+
+  <div class="permit-card">
+    <div class="card-label">رقم التصريح</div>
+    <div class="card-value">22475</div>
+  </div>
+  <div class="permit-card">
+    <div class="card-label">الشركة</div>
+    <div class="card-value">نسیم الارجوان للنقل والتجهیز والخدمات العامة</div>
+  </div>
+  <div class="permit-card">
+    <div class="card-label">تاريخ بدء التصريح</div>
+    <div class="card-value">2026/05/28</div>
+  </div>
+  <div class="permit-card">
+    <div class="card-label">تاريخ انتهاء التصريح</div>
+    <div class="card-value">2026/11/27</div>
+  </div>
+
+  <div class="download-section">
+    <button class="download-btn" onclick="location.href='https://cso.iq.vercel.app/permits/22475.pdf'">اضغط لتنزيل التصريح (PDF)</button>
+    <p class="info-text">سيبدأ التنزيل مباشرة. إذا لم يبدأ، اضغط الزر مرة أخرى.</p>
+  </div>
+</div>
+</body>
+</html>
